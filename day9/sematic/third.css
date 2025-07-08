@@ -1,0 +1,82 @@
+.third {
+}
+.third > .contents {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.third > .contents > h6 {
+    font-size: 14px;
+    color: gray;
+}
+.third > .contents > h1 {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+.third > .contents > .gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 200px;
+}
+.third > .contents > .gallery > .box {
+    position: relative;
+    width: 464px;
+    height: 480px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+.third > .contents > .gallery > .box > .photo > .cellophane {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(68, 66, 66);
+    opacity: 0.4;
+    border-radius: 8px;
+}
+
+.third > .contents > .gallery > .box > .photo > img {
+    width: 464px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.third > .contents > .gallery > .box > .info {
+    bottom: 30px;
+    position: absolute;
+}
+.third > .contents > .gallery > .box > .info > h5 {
+    font-size: 12px;
+    color: white;
+}
+.third > .contents > .gallery > .box > .info > h2 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 15px 0;
+    line-height: 1.3;
+}
+.third > .contents > .gallery > .box > .info > button {
+    background-color: whith;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.third > .contents > .gallery > .box > .cellophane {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+}

@@ -1,0 +1,25 @@
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second > .contents {
+    width: 100%;
+    max-width: 1200px;
+    margin: 130px auto;
+    text-align: center;
+    font-size: 30px;
+}
+.second > .contents > h1 {
+    color: gray;
+    line-height: 1.5;
+}
+.second > .contents > h2 {
+    color: gray;
+    margin-top: 37px;
+}
+.second > .contents > h2 > span {
+    font-weight: bold;
+    color: black;
+}
