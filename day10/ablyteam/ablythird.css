@@ -1,0 +1,124 @@
+.third {
+    padding: 0 0 200px 0;
+}
+.third > .contents {
+    width: 100%;
+    max-width: 1042px;
+    margin: 0 auto;
+}
+.third > .contents > h6 {
+    font-size: 20px;
+    color: gray;
+}
+.third > .contents > h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.third > .contents > .gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.third > .contents > .gallery > .card {
+    width: 100%;
+    height: 480px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+.third > .contents > .gallery > .card > .photo {
+    width: 100%;
+    height: 480px;
+
+    transition: all 0.3s;
+}
+.third > .contents > .gallery > .card > .photo:hover {
+    transform: scale(1.03);
+}
+.third > .contents > .gallery > .card > .info {
+    position: absolute;
+    bottom: 30px;
+
+    width: 100%;
+    text-align: center;
+}
+.third > .contents > .gallery > .card > .info > h6 {
+    font-size: 20px;
+}
+.third > .contents > .gallery > .card > .info > h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+.third > .contents > .gallery > .card > .info > button {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 10px;
+}
+.thirdimage1 {
+    background-image: url(../ablyteam/photo/third1.jpg);
+    background-size: cover;
+    filter: brightness(0.8);
+}
+.thirdimage2 {
+    background-image: url(../ablyteam/photo/third.jpg);
+    background-size: cover;
+    filter: brightness(0.6);
+}
+
+@media screen and (max-width: 768px) {
+    .third {
+        padding: 0 0 100px 0;
+    }
+
+    .third > .contents {
+        padding: 0 20px;
+    }
+
+    .third > .contents > h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .third > .contents > h6 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .third > .contents > .gallery {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .third > .contents > .gallery > .card {
+        height: 400px;
+    }
+
+    .third > .contents > .gallery > .card > .photo {
+        height: 400px;
+    }
+
+    .third > .contents > .gallery > .card > .info {
+        bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .third > .contents > .gallery > .card > .info > h6 {
+        font-size: 16px;
+    }
+
+    .third > .contents > .gallery > .card > .info > h1 {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    .third > .contents > .gallery > .card > .info > button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}

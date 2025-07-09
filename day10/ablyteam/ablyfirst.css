@@ -1,0 +1,22 @@
+.first {
+    height: 100vh;
+    background-image: url(../ablyteam/photo/first.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first > .contents {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.first > .contents > h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+}
