@@ -1,49 +1,93 @@
 .second {
-    height: 650wh;
+  height: 650wh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fde2a7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fde2a7;
 }
 
 .second > .contents {
-    margin: 120px 0;
-    text-align: center;
+  margin: 120px 0;
+  text-align: center;
 }
 .second > .contents > .info1 {
-    font-size: 40px;
-    font-weight: 900;
-    color: #90470c;
-    margin-right: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #90470c;
+  margin-right: 20px;
 }
 .second > .contents > .info2 {
-    font-size: 42px;
-    font-weight: 300;
-    color: black;
+  font-size: 42px;
+  font-weight: 300;
+  color: black;
 }
 .second > .contents > .divider {
-    width: 100px;
-    height: 1px;
-    margin: 60px auto 20px auto;
+  width: 100px;
+  height: 1px;
+  margin: 60px auto 20px auto;
 
-    background-color: black;
+  background-color: black;
 }
 .second > .contents > .gallery {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
 }
 .second > .contents > .gallery > .card > .photo > .img {
 }
 .second > .contents > .gallery > .card > .name {
-    color: #693a13;
-    font-size: 20px;
-    font-weight: 800;
-    margin: 20px 0 10px 0;
+  color: #693a13;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 20px 0 10px 0;
 }
 .second > .contents > .gallery > .card > .en-name {
+  color: #cc8e5d;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 760px) {
+  .second > .contents {
+    margin: 150px 0 120px 0;
+  }
+  .second > .contents > .info1 {
+    font-size: 28px;
+  }
+  .second > .contents > .info2 {
+    font-size: 28px;
+  }
+  .second > .contents > .gallery {
+    width: 100%;
+    max-width: 350px;
+    gap: 0px;
+  }
+  .second > .contents > .gallery > .card {
+    width: 100%;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 30px;
+  }
+
+  .second > .contents > .gallery > .card > .photo {
+    width: 100%;
+    height: 267px;
+  }
+  .second > .contents > .gallery > .card > .photo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .second > .contents > .gallery > .card > .name {
+    font-size: 16px;
+  }
+  .second > .contents > .gallery > .card > .en-name {
     color: #cc8e5d;
-    font-size: 18px;
+    font-size: 13px;
+  }
 }

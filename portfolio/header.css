@@ -1,23 +1,48 @@
 header {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 nav {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 25px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
 }
 header > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 
 header > ul > li:hover {
-    text-decoration: underline;
-    text-underline-offset: 12px;
-    text-decoration-thickness: 4px;
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 4px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 760px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  nav {
+    text-align: start;
+    margin-bottom: 0px;
+  }
+  header > ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
