@@ -1,42 +1,49 @@
 .second {
-  height: 70wh;
-  background-color: #fce1a6;
+    height: 650wh;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde2a7;
 }
+
 .second > .contents {
-  margin: 150px 0;
-  text-align: center;
+    margin: 120px 0;
+    text-align: center;
 }
 .second > .contents > .info1 {
-  font-size: 40px;
-  font-weight: 900;
-  color: #90470c;
-  margin-right: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #90470c;
+    margin-right: 20px;
 }
 .second > .contents > .info2 {
-  font-size: 42px;
-  color: black;
-  margin-top: 15px;
+    font-size: 42px;
+    font-weight: 300;
+    color: black;
 }
+.second > .contents > .divider {
+    width: 100px;
+    height: 1px;
+    margin: 60px auto 20px auto;
 
+    background-color: black;
+}
 .second > .contents > .gallery {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
 }
 .second > .contents > .gallery > .card > .photo > .img {
 }
 .second > .contents > .gallery > .card > .name {
-  color: #693a13;
-  font-size: 20px;
-  font-weight: 800;
-  margin-top: 20px;
+    color: #693a13;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px 0 10px 0;
 }
 .second > .contents > .gallery > .card > .en-name {
-  color: #cc8e5d;
-  font-size: 18px;
+    color: #cc8e5d;
+    font-size: 18px;
 }

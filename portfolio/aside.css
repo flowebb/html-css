@@ -1,0 +1,17 @@
+aside > .contents {
+    width: 232px;
+    height: 336px;
+    position: fixed;
+    right: 150px;
+    z-index: 20;
+}
+aside > .contents > img {
+    width: 220px;
+    height: 336px;
+    object-fit: cover;
+}
+aside > .contents > i {
+    position: absolute;
+    top: 0px;
+    font-size: 25px;
+}

@@ -1,9 +1,9 @@
 .first {
-  height: 70vh;
+    height: 70vh;
 }
 .first > .main {
-  width: 100%;
-  height: 100%;
-  background-image: url("../portfolio/images/main.jpg");
-  background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url('../portfolio/images/mainphoto.jpg');
+    background-size: cover;
 }

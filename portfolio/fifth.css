@@ -1,0 +1,49 @@
+.fifth {
+    width: 100%;
+    height: 450px;
+    background-image: url('../portfolio/images/fifth-image.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.fifth > .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    color: white;
+    position: absolute;
+    left: 950px;
+}
+.fifth > .contents > h1 {
+    font-size: 44px;
+
+    line-height: 1.2;
+}
+.fifth > .contents > h6 {
+    font-size: 17px;
+
+    line-height: 1.2;
+}
+.fifth > .contents > .links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.fifth > .contents > .links > button {
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+
+    padding: 10px 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.fifth > .contents > .links > button:hover {
+    background-color: white;
+    color: black;
+}
