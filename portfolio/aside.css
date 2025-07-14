@@ -1,36 +1,18 @@
 aside > .contents {
-  width: 232px;
-  height: 336px;
-  position: fixed;
-  right: 150px;
-  z-index: 20;
+    width: 208px;
+    height: 340px;
+    position: fixed;
+    right: 150px;
+    z-index: 20;
 }
 aside > .contents > img {
-  width: 220px;
-  height: 336px;
-  object-fit: cover;
-}
-aside > .contents > i {
-  position: absolute;
-  top: 0px;
-  font-size: 25px;
-}
-
-@media screen and (max-width: 760px) {
-  aside > .contents {
-    width: 162px;
-    height: 270px;
-
-    right: 50px;
-  }
-  aside > .contents > img {
-    width: 100%;
+    width: 210px;
     height: 100%;
     object-fit: cover;
-  }
-  aside > .contents > i {
+}
+aside > .contents > i {
     position: absolute;
     top: 0px;
+    left: 220px;
     font-size: 25px;
-  }
 }

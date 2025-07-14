@@ -1,93 +1,111 @@
 .second {
-  height: 650wh;
+    height: 650wh;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fde2a7;
-}
-
-.second > .contents {
-  margin: 120px 0;
-  text-align: center;
-}
-.second > .contents > .info1 {
-  font-size: 40px;
-  font-weight: 900;
-  color: #90470c;
-  margin-right: 20px;
-}
-.second > .contents > .info2 {
-  font-size: 42px;
-  font-weight: 300;
-  color: black;
-}
-.second > .contents > .divider {
-  width: 100px;
-  height: 1px;
-  margin: 60px auto 20px auto;
-
-  background-color: black;
-}
-.second > .contents > .gallery {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-}
-.second > .contents > .gallery > .card > .photo > .img {
-}
-.second > .contents > .gallery > .card > .name {
-  color: #693a13;
-  font-size: 20px;
-  font-weight: 800;
-  margin: 20px 0 10px 0;
-}
-.second > .contents > .gallery > .card > .en-name {
-  color: #cc8e5d;
-  font-size: 18px;
-}
-
-@media screen and (max-width: 760px) {
-  .second > .contents {
-    margin: 150px 0 120px 0;
-  }
-  .second > .contents > .info1 {
-    font-size: 28px;
-  }
-  .second > .contents > .info2 {
-    font-size: 28px;
-  }
-  .second > .contents > .gallery {
-    width: 100%;
-    max-width: 350px;
-    gap: 0px;
-  }
-  .second > .contents > .gallery > .card {
-    width: 100%;
-    height: 257px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: #fde2a7;
+}
 
-    margin-left: 30px;
-  }
-
-  .second > .contents > .gallery > .card > .photo {
+.second > .contents {
     width: 100%;
-    height: 267px;
-  }
-  .second > .contents > .gallery > .card > .photo > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  .second > .contents > .gallery > .card > .name {
-    font-size: 16px;
-  }
-  .second > .contents > .gallery > .card > .en-name {
+    margin: 12% auto;
+}
+.second > .contents > .information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.second > .contents > .information > .info1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #90470c;
+    margin-right: 20px;
+}
+.second > .contents > .information > .info2 {
+    font-size: 42px;
+    font-weight: 300;
+    color: black;
+}
+.second > .contents > .divider {
+    width: 100px;
+    height: 1px;
+    margin: 60px auto 20px auto;
+
+    background-color: black;
+}
+.second > .contents > .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.second > .contents > .gallery > .card {
+}
+.second > .contents > .gallery > .card > .photo {
+    text-align: center;
+}
+
+.second > .contents > .gallery > .card > .photo > .img {
+}
+.second > .contents > .gallery > .card > .name {
+    color: #693a13;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+.second > .contents > .gallery > .card > .en-name {
     color: #cc8e5d;
-    font-size: 13px;
-  }
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .second > .contents > .gallery {
+        gap: 0%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .second > .contents > .information {
+        flex-direction: column;
+    }
+
+    .second > .contents > .gallery > .card > .name {
+        font-size: 15px;
+
+        margin: 20px 14px 10px 14px;
+    }
+    .second > .contents > .gallery > .card > .en-name {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .second > .contents > .information > .info1 {
+        font-size: 30px;
+    }
+    .second > .contents > .information > .info2 {
+        font-size: 30px;
+    }
+    .second > .contents > .gallery {
+        justify-content: center;
+    }
+    .second > .contents > .gallery > .card {
+        width: 100px;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .second > .contents > .gallery > .card > .photo > img {
+        width: 100%;
+        height: auto;
+    }
 }

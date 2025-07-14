@@ -1,109 +1,168 @@
 .third {
-  width: 100%;
-  height: 450px;
-  background-color: #052f6f;
-  position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #052f6f;
+    position: relative;
 }
 .third > img {
-  position: absolute;
-  object-fit: cover;
-  right: 0px;
-  bottom: 0px;
+    position: absolute;
+    object-fit: cover;
+    right: 0px;
+    bottom: 0px;
 }
 .third > .contents {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 300px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 15%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 
-  color: white;
+    color: white;
 }
 .third > .contents > h1 {
-  font-size: 100px;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-  font-family: "Arial Black", sans-serif;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-family: 'Arial Black', sans-serif;
 }
 .third > .contents > h3 {
-  font-size: 28px;
+    font-size: 28px;
 
-  font-family: "Arial Black", sans-serif;
+    font-family: 'Arial Black', sans-serif;
 }
 .third > .contents > h5 {
-  font-size: 16px;
-  line-height: 1.4;
-  padding: 22px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 22px 0;
 }
 .third > .contents > .links {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 .third > .contents > .links > button {
-  font-size: 16px;
-  color: white;
-  border: 1px solid white;
-  background-color: transparent;
-  padding: 10px 40px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px 40px;
 }
 .third > .contents > .links > button:hover {
-  color: black;
-  border: 1px solid white;
-  background-color: white;
-  padding: 10px 40px;
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    padding: 10px 40px;
 }
 
-.contents-mobile {
-  display: none;
+@media screen and (max-width: 1600px) {
+    .third > .contents {
+        left: 8%;
+    }
+    .third > .contents > h1 {
+        font-size: 70px;
+    }
+    .third > .contents > h3 {
+        font-size: 26px;
+    }
+    .third > .contents > h5 {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .third {
+        height: 75vh;
+    }
+
+    .third > .contents {
+        left: 0%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 380px;
+        margin: 0 auto;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+        color: white;
+    }
+
+    .third > .contents > h1 {
+        font-size: 30px;
+        color: white;
+        -webkit-text-stroke: 0px white;
+    }
+    .third > .contents > h3 {
+        font-size: 28px;
+        font-weight: 200;
+
+        font-family: sans-serif;
+    }
+    .third > .contents > h5 {
+        font-size: 14px;
+    }
+    .third > .contents > .links {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .third > .contents > .links > button {
+        width: 200px;
+        font-size: 16px;
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+    }
 }
 
 @media screen and (max-width: 760px) {
-  .third {
-    width: 100%;
-    height: 760px;
-  }
-  .third > .contents {
-    width: 100%;
-    height: 100%;
+    .third {
+        height: 75vh;
+    }
 
-    left: 0px;
+    .third > .contents {
+        width: 100%;
+        max-width: 100%;
+        max-height: 380px;
+        margin: 0 auto;
+        text-align: center;
 
-    justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
 
-    margin-top: 100px;
-    text-align: center;
-  }
-  .third > .contents > h1 {
-    font-size: 30px;
-    color: white;
+        color: white;
+    }
 
-    -webkit-text-stroke: none;
-    font-family: "Arial Black", sans-serif;
-  }
+    .third > .contents > h1 {
+        font-size: 30px;
+        color: white;
+        -webkit-text-stroke: 0px white;
+    }
+    .third > .contents > h3 {
+        font-size: 28px;
+        font-weight: 200;
 
-  .third > .contents > h3 {
-    font-size: 27px;
-
-    font-family: sans-serif;
-  }
-  .third > .contents > h5 {
-    font-size: 16px;
-  }
-  .third > .contents > .links {
-    display: flex;
-    flex-direction: column;
-
-    gap: 10px;
-    max-width: 175px;
-    margin: 0 auto;
-  }
-  .third > .contents > .links > button {
-    font-size: 15px;
-    padding: 10px 40px;
-  }
+        font-family: sans-serif;
+    }
+    .third > .contents > h5 {
+        font-size: 14px;
+    }
+    .third > .contents > .links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .third > .contents > .links > button {
+        width: 200px;
+        font-size: 16px;
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+    }
 }

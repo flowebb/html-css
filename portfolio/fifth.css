@@ -1,6 +1,6 @@
 .fifth {
     width: 100%;
-    height: 450px;
+    height: 45vh;
     background-image: url('../portfolio/images/fifth-image.webp');
     background-size: cover;
     display: flex;
@@ -12,10 +12,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 60px;
+    gap: 6vh;
     color: white;
     position: absolute;
-    left: 950px;
+    right: 10%;
 }
 .fifth > .contents > h1 {
     font-size: 44px;
@@ -39,11 +39,45 @@
     color: white;
 
     padding: 10px 45px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
 }
 .fifth > .contents > .links > button:hover {
     background-color: white;
     color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .fifth {
+        height: 55vh;
+    }
+    .fifth > .contents {
+        align-items: center;
+        text-align: center;
+        margin: 40px;
+
+        position: static;
+    }
+
+    .fifth > .contents > h1 {
+        font-size: 30px;
+
+        line-height: 1.2;
+    }
+    .fifth > .contents > h6 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .fifth {
+        height: 55vh;
+    }
+    .fifth > .contents > .links {
+        flex-direction: column;
+    }
+    .fifth > .contents > .links > button {
+        padding: 10px 120px;
+
+        flex-direction: row;
+        text-align: center;
+    }
 }
